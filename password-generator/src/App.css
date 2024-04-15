@@ -1,43 +1,82 @@
-.container{
-  width: 30%;
-  margin: auto auto;
-  padding: 2% 2%;
-  background-color: black;
+* {
+  font-family: Arial;
+}
+
+.container {
+  background-color: #24232b;
+  padding: 24px;
+}
+
+.header {
   color: white;
-  line-height: 2rem;
-  border-radius: 20px;
-}
-
-.App{
-  display: flex;
-  justify-content: center;
-  align-self: center;
-}
-
-.flex-between{
   display: flex;
   justify-content: space-between;
-}
-
-.flex-evenly{
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.button{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.button > button{
-  width: 100%;
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 20px;
 }
 
 button {
-  background-color: rgb(2, 162, 109);
+  padding: 10px;
+  border-radius: 5px;
   border: none;
-  padding: 0.8rem;
+  background-color: #2a8b8b;
   color: white;
-  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.copyBtn {
+  height: 30px;
+  font-size: 10px;
+}
+
+.charlength {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 24px;
+}
+
+.charlength span {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 24px;
+}
+
+.checkboxes {
+  display: grid;
+  grid-template-columns: auto auto;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+}
+
+.checkboxes div {
+  display: flex;
+  gap: 5px;
+  padding-bottom: 25px;
+}
+
+.generateBtn {
+  width: 100%;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.errorMessage {
+  color: red;
+  padding-bottom: 5px;
+}
+
+.password-strength {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  color: white;
 }
